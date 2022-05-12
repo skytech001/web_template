@@ -1,0 +1,113 @@
+body {
+	margin: 0;
+	font-family: ariel;
+}
+
+.zone1 {
+	background-color: #2196f3;
+	/*make the nav bar hover*/
+	cursor: pointer;
+	border-radius: 4px;
+	border: 1px solid #bbb;
+	transition: all 0.3s linear;
+}
+
+.zone1:hover {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+	-o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+	box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+}
+
+
+
+
+/*this makes the nav bar sticky and declaring the width here again makes the width 100%*/
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.main-nav {
+	display: flex;
+	list-style: none;
+	/*font-size: 0.7em;*/
+	margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.main-nav {
+		font-size: 0.5em;
+		padding: 0;
+	}
+}
+
+li {
+	padding: 20px;
+
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+/*the margin-left: auto; pushes the element all the way to the right
+since the margin left is auto(i.e auto fill left side of element.)*/
+.push {
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+
+/*cover style*//*the 50vh means 50 view port(makes it suer responsive.t*/
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 70vh;
+	
+	color: white;
+}
+
+.cover {
+	width: 30rem;
+}
+
+
+/*project grid style*/
+.zone3 {
+	background-color: #2196f3;
+}
+.grid-wrapper {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box >img {
+	width: 100%;
+}
+
+.box {
+	background-color: #444;
+	padding: 130px;
+	margin: 20px;
+}
+
+/*make all the image boxes hover for diffrent browsers*/
+.box:hover {
+	-webkit-transform: rotate(-7deg);
+	-moz-transform: rotate(-7deg); 
+	-o-transform: rotate(-7deg); 
+	transform: rotate(-7deg);
+}
+
+
+footer {
+	background-color: #ffbe0b;
+	text-align: center;
+	color: white;
+	height: 20vh;
+}
+
